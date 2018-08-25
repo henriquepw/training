@@ -1,50 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-#define mod(x) ((x >= 0)? x : -1 * x)
-
-void banknotes();
-
-void triangle();
-
+// www.urionlinejudge.com.br/judge/en/problems/view/1089
 void musical_loop();
 int is_sign_dif(int sign_current, int sign_next);
 
 int main(){
-	//banknotes();
-	//triangle();
 	musical_loop();
   
 	return 0;
-}
-
-void banknotes(){
-	int value = 0;
-	int notes[] = {100, 50, 20, 10, 5, 2, 1};
-
-	scanf("%d", &value);
-	printf("%d", value);
-
-	for (int i = 0; i <  7; i++){
-		int aux = value / notes[i];
-		printf("%d nota(s) de R$ %d,00\n", aux, notes[i]);
-		value = value % notes[i];
-	}
-} 
-
-void triangle(){
-	float a, b, c;
-
-  	scanf("%f", &a);
-  	scanf("%f", &b);
-  	scanf("%f", &c);
-  
-  	if((a < b + c) || (b < a + c) || (c < a + b)){
-  		printf("Perimetro = %.1f", a + b + c);
-  	} else {
-  		printf("Area = %.1f", (a + b)* c / 2);
- 	}
-
 }
 
 void musical_loop(){
