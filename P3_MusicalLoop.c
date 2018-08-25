@@ -21,7 +21,7 @@ int main(){
 		
 		if (amostras > 2){
 			for(int n = 1; n < amostras; n++){
-				printf("%d\n", sinal_atual);
+				//printf("%d\n", sinal_atual);
 				sinal = sinal_atual;
 				
 				if (n == amostras-1) {
@@ -34,8 +34,8 @@ int main(){
 				pulses += (sinal != sinal_atual)? 1 : 0;
 			}
 			
-			printf("fsing: %d\n", f_sign);
-			printf("sing final: %d\n", sinal);
+			//printf("fsing: %d\n", f_sign);
+			//printf("sing final: %d\n", sinal);
 			pulses += (f_sign != sinal_atual)? 1 : 0;
 			
 		} else if ((amostras == 2) && (list_amostras[0] != list_amostras[1])){
