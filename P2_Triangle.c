@@ -1,25 +1,18 @@
 #include <stdio.h>
 
 // www.urionlinejudge.com.br/judge/en/problems/view/1043
-void triangle();
 
 int main(){
-	triangle();
-  
-	return 0;
-}
-
-void triangle(){
 	float a, b, c;
 
-  	scanf("%f", &a);
-  	scanf("%f", &b);
-  	scanf("%f", &c);
+  	scanf("%f %f %f", &a, &b, &c);
   
-  	if((a < b + c) || (b < a + c) || (c < a + b)){
-  		printf("Perimetro = %.1f", a + b + c);
+  	if((a < b + c) && (b < a + c) && (c < b + a)){
+  		printf("Perimetro = %.1f\n", a + b + c);
   	} else {
-  		printf("Area = %.1f", (a + b)* c / 2);
+  		printf("Area = %.1f\n", (a + b)* c / 2);
  	}
+  
+	return 0;
 }
 
