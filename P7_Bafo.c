@@ -4,10 +4,10 @@
 int main() {
  
     int rodadas = 0;
-    int aldo = 0, beto = 0;
     
     int teste = 1;
     while(1){
+    	int aldo = 0, beto = 0;
     	scanf("%d", &rodadas);
     	
     	if(rodadas == 0) break;
