@@ -1,6 +1,8 @@
-#include <stdio.h>
+#include<bits/stdc++.h>
 
 // codeforces.com/problemset/problem/600/B
+using namespace std;
+
 int main(){
   	int n = 0, m = 0;
   	scanf("%d %d", &n, &m);
@@ -13,7 +15,7 @@ int main(){
 		for(int i = 0; i < m; i++)
 		scanf("%d", &b[i]);
 
-	for(int i = 0; i < n-1; i++){
+	/*for(int i = 0; i < n-1; i++){
 	    int menor_a = a[i], pos = i;
 	    for(int j = i; j < n; j++){
 	        if(menor_a > a[j]) {
@@ -25,7 +27,9 @@ int main(){
 	    int aux = a[i];
 	    a[i] = menor_a;
 	    a[pos] = aux;
-	}
+	}*/
+	
+	sort(a, a + n);
 	  
 	for(int i = 0; i < m; i++){
 		int pos = 0, mid;
@@ -48,6 +52,7 @@ int main(){
 				} else {
 					left = mid + 1;
 				}
+				
 			}
 		}
 		
