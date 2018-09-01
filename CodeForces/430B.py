@@ -64,13 +64,9 @@ if len(posibilidades) == 0:
 else:
   result = 0
   for x in posibilidades:
-    #print(x)
-    #print(soma)
-
     matrix = copy.deepcopy(soma)
     del(matrix[x])
     matrix = list_sum(matrix)
-    #print(matrix)
 
     while True:
       pos = ispos(matrix)
@@ -81,8 +77,6 @@ else:
           del(matrix[i])
         if len(matrix) > 0:
           matrix = list_sum(matrix)
-
-      #print(matrix)
 
     aux = 0
     for j in matrix:
