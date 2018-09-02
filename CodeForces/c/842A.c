@@ -1,21 +1,44 @@
 #include <stdio.h>
 
 int main() {
-  int l, r, x, y, ef, count = 0;
+  int l, r, x, y, ef;
   scanf("%d %d %d %d %d", &l, &r, &x, &y, &ef);
 
-  int xp_mid, c_mid, find = 0;
-  while (l <= r) {
+  float xp_mid, c_mid, find = 0;
+  for (float i = ef; i <= r; i += ef) {
+    if (i < l)
+      continue;
+    else {
+      int xx = x, yy = y;
+      while (xx <= yy) {
+        c_mid = (xx + yy) / 2;
+
+        if (ef > i / c_mid) {
+          yy = c_mid - 1;
+        } else if (ef < i / c_mid) {
+          xx = c_mid + 1;
+        } else {
+          find = 1;
+          break;
+        }
+      }
+      if (find)
+        break;
+    }
+  }
+
+  /*while (l <= r) {
     xp_mid = (l + r) / 2;
-    while (x <= y) {
-      c_mid = (x + y) / 2;
+    int xx = x, yy = y;
+    while (xx <= yy) {
+      c_mid = (xx + yy) / 2;
+      printf("%f / %f = %f\n", xp_mid, c_mid, xp_mid / c_mid);
 
       if (ef > xp_mid / c_mid) {
-        y = c_mid - 1;
+        yy = c_mid - 1;
       } else if (ef < xp_mid / c_mid) {
-        x = c_mid + 1;
-      } else if (ef == xp_mid / c_mid) {
-        printf("YES\n");
+        xx = c_mid + 1;
+      } else {
         find = 1;
         break;
       }
@@ -28,16 +51,14 @@ int main() {
         l = xp_mid + 1;
       } else if (ef < xp_mid / c_mid) {
         r = xp_mid - 1;
-      } else if (ef == xp_mid / c_mid) {
-        printf("YES\n");
+      } else {
         find = 1;
         break;
       }
     }
-  }
+  }*/
 
-  if (!find)
-    printf("NO\n");
+  printf(find ? "YES\n" : "NO\n");
 
   return 0;
 }
