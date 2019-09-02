@@ -1,7 +1,6 @@
-import copy
-
 # codeforces.com/problemset/problem/430/B
 
+import copy
 
 def list_sum(matrix):
     result = []

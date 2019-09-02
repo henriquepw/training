@@ -1,3 +1,5 @@
+# https://www.urionlinejudge.com.br/judge/pt/problems/view/1327
+
 class Jogador:
     def __init__(self, name):
         self.nome = name

@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// https://www.urionlinejudge.com.br/judge/pt/problems/view/2373
 int main() {
   int n = 0, l = 0, c = 0, total = 0;
 

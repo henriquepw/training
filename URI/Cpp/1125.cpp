@@ -2,11 +2,13 @@
 
 using namespace std;
 
+// incomplete
+// https://www.urionlinejudge.com.br/judge/pt/problems/view/1125
 int main() {
   int G = 0, P = 0; //G = Corridas / P = Pilotos
   cin >> G, P;
 
-  for (int i = 0; i < G; i++) {
+  while (G--) {
     int rank[P];
 
     for(int j = 0; j < P; j++) cin >> rank[j];
@@ -19,7 +21,7 @@ int main() {
       for(int k = 0; k < S; k++)
         cin >> points[j][k];
 
-    
+
   }
 
   return 0;

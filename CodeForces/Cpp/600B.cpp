@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 
-// codeforces.com/problemset/problem/600/B
 using namespace std;
 
+// codeforces.com/problemset/problem/600/B
 int main() {
   int n = 0, m = 0;
   scanf("%d %d", &n, &m);

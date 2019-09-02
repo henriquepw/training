@@ -23,17 +23,15 @@ int main() {
 
       while (left <= right) {
         mid = (left + right) / 2;
-        // printf("\nindex: %d: l= %d, m= %d, d= %d\n", i, left, mid, right);
+
         if (soma[mid] - soma[i - 1] <= t) {
           if (soma[mid + 1] - soma[i - 1] > t) {
             result_aux = mid - i + 1;
-            // printf("\n%d", result_aux);
             break;
           } else
             left = mid + 1;
         } else
           right = mid - 1;
-        // printf("\n%d", result_aux);
       }
       if (result_aux > result)
         result = result_aux;

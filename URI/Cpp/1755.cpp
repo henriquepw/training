@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// https://www.urionlinejudge.com.br/judge/pt/problems/view/1755
 int main() {
   int t;
   cin >> t;
