@@ -14,13 +14,13 @@ int main() {
   for (int x : coins) {
     if (x == 100) cout << "MOEDAS:" << endl;
 
-    int total = n / x;
-    n = n - (total * x);
-
-    if (x > 100) 
-      printf("%d nota(s) de R$ %d.00\n", total,  x / 100);
-    else 
-      printf("%d moedas(s) de R$ %.2f\n", total,  (double) x / 100);
+    double total = (x == 1) ? n : (int) (n / x);
+    n -= (total * x);
+      
+    if (x > 100)
+      printf("%.0f nota(s) de R$ %d.00\n", total,  x / 100);
+    else
+      printf("%.0f moeda(s) de R$ %.2f\n", total,  (float) x / 100);
   }
 
   return 0;
