@@ -1,5 +1,6 @@
 package main
 
 func main() {
-	Q1047()
+	Q1019()
+	// Q1047()
 }
