@@ -17,11 +17,14 @@ func Q1171() {
 	for i := 0; i < N; i++ {
 		var value int
 		fmt.Scanf("%d", &value)
-		values[value] = values[value] + 1
-	}
 
-	for k := range values { 
-    keys = append(keys, k)
+		_, key := values[value]
+
+		if !key {
+			keys = append(keys, value)
+		}
+		
+		values[value] = values[value] + 1
 	}
 
 	sort.Ints(keys)

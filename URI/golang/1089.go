@@ -14,7 +14,7 @@ func Q1089() {
 		}
 
 		var points []int
-		peaks := 0
+		var peaks int
 
 		for i := 0; i < N; i++ {
 			var point int

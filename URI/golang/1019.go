@@ -8,5 +8,5 @@ func Q1019() {
 
 	fmt.Scanf("%d", &N)
 
-	fmt.Printf("%d:%d:%d\n", N / 3600, (N % 3600) / 60, N  % 60)
+	fmt.Printf("%d:%d:%d\n", N / 3600, (N % 3600) / 60, N % 60)
 }
