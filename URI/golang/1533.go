@@ -8,7 +8,6 @@ func Q1533() {
 
 	for {
 		fmt.Scanf("%d", &N)
-
 		suspects := make([]uint16, N)
 	
 		if N == 0 {

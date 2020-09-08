@@ -7,23 +7,21 @@ func Q2452() {
 	var rowSize, drops, result, distancy int
 
 	fmt.Scanf("%d %d", &rowSize, &drops)
+	fmt.Scanf("%d", &result)
+	result--
 
-	positions := make([]int, drops)
-	for i := 0; i < drops; i++ {
+	positions := make([]int, drops - 1)
+	for i := 0; i <= drops; i++ {
 		fmt.Scanf("%d", &positions[i])
 
-		if i > 0 {
-			distancy = (positions[i] - positions[i - 1]) / 2
-			
-			if distancy > result {
-				result = distancy
-			}
-		} else {
-			result = positions[0] - 1
+		distancy = (positions[i] - positions[i - 1]) / 2
+		
+		if distancy > result {
+			result = distancy
 		}
 	}
 
-	lastDistancy := rowSize - positions[drops - 1]
+	lastDistancy := rowSize - positions[drops - 2]
 	if (lastDistancy >  result) {
 		result = lastDistancy
 	}
