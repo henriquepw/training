@@ -2,7 +2,7 @@
 
 using namespace std;
  
-// https://www.urionlinejudge.com.br/judge/pt/runs/add/1021
+// https://www.urionlinejudge.com.br/judge/pt/problems/view/1021
 int main() {
   int coins[] = {10000, 5000, 2000, 1000, 500, 200, 100, 50, 25, 10, 5, 1};
  

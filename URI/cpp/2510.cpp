@@ -2,7 +2,7 @@
 
 using namespace std;
  
-// https://www.urionlinejudge.com.br/judge/pt/runs/add/2510
+// https://www.urionlinejudge.com.br/judge/pt/problems/view/2510
 int main() {
  
   int t = 0, n = 0;

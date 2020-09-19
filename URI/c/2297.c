@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// www.urionlinejudge.com.br/judge/pt/problems/view/2297
+// https://www.urionlinejudge.com.br/judge/en/problems/view/2297
 int main() {
 
   int rodadas = 0;

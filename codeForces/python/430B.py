@@ -2,6 +2,7 @@
 
 import copy
 
+
 def list_sum(matrix):
     result = []
     aux = matrix[0]

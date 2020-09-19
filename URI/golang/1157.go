@@ -13,6 +13,6 @@ func Q1157() {
       fmt.Printf("%d\n", i)
     }
   }
-  
+
   fmt.Printf("%d\n", N)
 }

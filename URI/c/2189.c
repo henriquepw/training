@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// www.urionlinejudge.com.br/judge/pt/problems/view/2189
+// https://www.urionlinejudge.com.br/judge/en/problems/view/2189
 int main() {
   int participantes, teste = 1;
 

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// www.urionlinejudge.com.br/judge/en/problems/view/1089
+// https://www.urionlinejudge.com.br/judge/en/problems/view/1089
 int get_sign(int sign_current, int sign_next);
 
 int main() {

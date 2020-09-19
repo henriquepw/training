@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-// www.urionlinejudge.com.br/judge/en/problems/view/1043
-
+// https://www.urionlinejudge.com.br/judge/en/problems/view/1043
 int main() {
   float a, b, c;
 

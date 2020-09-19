@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// www.urionlinejudge.com.br/judge/pt/problems/view/1933
+// https://www.urionlinejudge.com.br/judge/en/problems/view/1933
 int main() {
   int card1, card2;
   scanf("%d %d", &card1, &card2);

@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 
-// www.urionlinejudge.com.br/judge/pt/problems/view/1035
 using namespace std;
 
+// https://www.urionlinejudge.com.br/judge/pt/problems/view/1035
 int main() {
   int a, b, c, d;
   cin >> a >> b >> c >> d;

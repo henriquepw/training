@@ -2,7 +2,7 @@
 
 #define mod(x) ((x >= 0) ? x : -1 * x)
 
-// www.urionlinejudge.com.br/judge/en/problems/view/1018
+// https://www.urionlinejudge.com.br/judge/en/problems/view/1018
 int main() {
   int value = 0;
   int notes[] = {100, 50, 20, 10, 5, 2, 1};

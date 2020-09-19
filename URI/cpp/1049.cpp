@@ -2,7 +2,7 @@
 
 using namespace std;
  
-// https://www.urionlinejudge.com.br/judge/pt/runs/add/1049
+// https://www.urionlinejudge.com.br/judge/pt/problems/view/1049
 int main() {
   string animal[2][2][2] = {
     {{"aguia", "pomba"}, {"homem", "vaca"}},
