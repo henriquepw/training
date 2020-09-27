@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-// Time limit exceeded, this solution works on c++
-// Q1566 https://www.urionlinejudge.com.br/judge/pt/problems/view/1566
+// Q1566 Time limit exceeded, this solution works on c++
+// https://www.urionlinejudge.com.br/judge/pt/problems/view/1566
 func Q1566() {
   var N, NC, i, j, h, value int
 

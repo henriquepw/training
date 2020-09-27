@@ -29,7 +29,6 @@ func Q2460() {
 
   strSize := len(result) - 1
   if result[strSize] == ' ' {
-    fmt.Printf("----%b---\n", result[strSize])
     result = result[:strSize]
   }
 
