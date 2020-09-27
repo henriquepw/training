@@ -57,7 +57,7 @@ func (pq *PriorityQueue) Pop() interface{} {
 // https://www.urionlinejudge.com.br/judge/pt/problems/view/1340
 func Q1340() {
   var n int
-
+  
   for {
     _, err := fmt.Scanf("%d", &n)
 

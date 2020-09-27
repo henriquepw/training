@@ -6,7 +6,7 @@ import (
 )
 
 // Q1110 https://www.urionlinejudge.com.br/judge/pt/problems/view/1110
-func main() {
+func Q1110() {
 	var n int
 	
   for {
