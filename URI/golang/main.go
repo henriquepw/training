@@ -1,5 +1,5 @@
 package main
 
 func main() {
-  Q1430()
+  Q2506()
 }
