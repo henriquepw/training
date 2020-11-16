@@ -23,13 +23,11 @@ func Q2506() {
       limitTime = incomingTime + c
 
       if currentTime == 0 || incomingTime > currentTime {
-        currentTime = incomingTime / 30
+        currentTime = int(incomingTime / 30) * 30
 
         if incomingTime % 30 > 0 {
-          currentTime++
+          currentTime += 30
         } 
-
-        currentTime *= 30
       } else {
         currentTime += 30
       }
